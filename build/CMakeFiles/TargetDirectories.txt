@@ -1,0 +1,3 @@
+C:/Users/Elecflows/Desktop/learning_amterials/xlab/xlab_hw/hw1/sxw_hw1/build/CMakeFiles/sxw_hw1.dir
+C:/Users/Elecflows/Desktop/learning_amterials/xlab/xlab_hw/hw1/sxw_hw1/build/CMakeFiles/edit_cache.dir
+C:/Users/Elecflows/Desktop/learning_amterials/xlab/xlab_hw/hw1/sxw_hw1/build/CMakeFiles/rebuild_cache.dir
