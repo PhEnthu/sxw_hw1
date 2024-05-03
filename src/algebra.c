@@ -54,7 +54,24 @@ Matrix sub_matrix(Matrix a, Matrix b)
 Matrix mul_matrix(Matrix a, Matrix b)
 {
     // ToDo
-    return create_matrix(0, 0);
+
+     /*judge whether the two matrix legitimate*/
+    if(a.cols != b.rows){
+        printf("Error: The number of cols of matrix a must be equal to the number of rows of matrix b.\n");
+        return create_matrix(0,0);       
+    }
+    else{
+        int i,k,j;
+        Matrix c = create_matrix(a.rows,b.cols);
+        for(i = 0; i < a.rows; i++){
+            for(j = 0; j < b.cols; j++){
+                for(k = 0; k < a.cols; k++){
+                    c.data[i][j] += a.data[i][k]*b.data[k][j];
+                }
+            }
+        }
+        return c;
+    }
 }
 
 Matrix scale_matrix(Matrix a, double k)
@@ -71,13 +88,57 @@ Matrix scale_matrix(Matrix a, double k)
 Matrix transpose_matrix(Matrix a)
 {
     // ToDo
-    return create_matrix(0, 0);
+    int i,j;
+    Matrix b = create_matrix(a.cols,a.rows);
+    for(i = 0; i <a.rows; i++){
+        for(j = 0; j < a.cols; j++){
+            b.data[j][i] = a.data[i][j];
+        }
+    }
+    return b;
 }
 
 double det_matrix(Matrix a)
 {
     // ToDo
-    return 0;
+    /*judge whether the  matrix is legitimate*/
+    if(a.cols != a.rows){
+        printf("Error: The matrix must be a square matrix.\n");
+        return 0;
+    }
+
+    double s = 0;
+    int i, j, n = a.cols; 
+    /*judge the row of the matrix*/
+    if(a.cols == 2){
+        s = a.data[0][0]*a.data[1][1]-a.data[1][0]*a.data[0][1];
+        return s;
+    }
+    else if(a.cols == 1){
+        return a.data[0][0];
+    }
+    else if(a.cols == 0){
+        return 0;
+    }
+    else{
+        int p = 1;    //the varible of p is used as the function (-1)^n
+        Matrix c = create_matrix(n-1,n-1);
+        for(i = 0;i < n; i++){
+            for(int k = 0; k  < n-1; k++){
+                for(int m = 0; m < n-1; m++){
+                    if(m < i){
+                        c.data[k][m] = a.data[k+1][m];
+                    }
+                    else{
+                        c.data[k][m] = a.data[k+1][m+1];
+                    }
+                }
+            }
+            s+=p*a.data[0][i]*det_matrix(c);
+            p = -p;
+        }
+        return s;
+    }
 }
 
 Matrix inv_matrix(Matrix a)
