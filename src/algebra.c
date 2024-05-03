@@ -2,6 +2,13 @@
 #include <stdio.h>
 #include <math.h>
 
+double mypow(double x, int n){
+    double s = 0;
+    for(int i = 0; i < n; i++){
+        s *= x;
+    }
+}
+
 Matrix create_matrix(int row, int col)
 {
     Matrix m;
@@ -144,19 +151,100 @@ double det_matrix(Matrix a)
 Matrix inv_matrix(Matrix a)
 {
     // ToDo
-    return create_matrix(0, 0);
+
+    /*judge whether the inv_matrx is exist*/
+    if(a.rows != a.cols){
+        printf("Error: The matrix must be a square matrix.\n");
+        return create_matrix(0,0);
+    }
+    else if(det_matrix(a) == 0){
+        printf("Error: The matrix is singular.\n");
+        return create_matrix(0,0);
+    }
+    else{
+        int n = a.cols, i, j;
+        Matrix A = create_matrix(n,n), c = create_matrix(n-1,n-1);
+        for(i = 0; i < n; i++){
+            for(j = 0; j < n; j++){
+
+                /*-------        create Cofactors        --------*/
+                for(int k = 0; k  < n-1; k++){
+                    for(int m = 0; m < n-1; m++){
+                        if(k < i){
+                            if(m < j){
+                                c.data[k][m] = a.data[k][m];
+                            }
+                            else{
+                                c.data[k][m] = a.data[k+1][m];
+                            }
+                        }
+                        else{
+                            if(m < j){
+                                c.data[k][m] = a.data[k][m+1];
+                            }
+                            else{
+                                c.data[k][m] = a.data[k+1][m+1];
+                            }
+                        }
+                    }
+                }
+                A.data[j][i] = det_matrix(c)*pow(-1,i+j);
+                if(A.data[j][i] == 0) //去除浮点数的-0.00格式
+                    A.data[j][i] = 0;
+            }
+        }
+        double det = det_matrix(a);
+        return scale_matrix(A,1.0/det);
+    }    
 }
 
 int rank_matrix(Matrix a)
 {
     // ToDo
-    return 0;
+    int r = a.rows;
+    int i, j, i1 = -1, m;
+
+    i = 0;
+    for(j = 0; j < a.cols-1; j++){
+        i1 = -1;
+        for(;i < a.rows;){
+            if(a.data[i][j] != 0){
+                for(m = 0; m < a.rows; m++){
+                    if(m != i)
+                        a.data[m][j+1] += -(a.data[i][j+1]*a.data[m][j])/a.data[i][j];
+                }
+                for(m = i+1; m < a.rows; m++){
+                    if((a.data[m][j+1] != 0)&&(i1<0)&&(m-i)){
+                        i1 = m;
+                    }
+                }
+                if(i1 < 0)
+                    r--;
+            }
+            i++;
+            break;
+        }
+        
+    }
+    return r;
 }
 
 double trace_matrix(Matrix a)
 {
     // ToDo
-    return 0;
+    if(a.cols != a.rows){
+        printf("Error: The matrix must be a square matrix.\n");
+        return 0;
+    }
+    else{
+        double s = 0;
+        int n = a.rows;
+
+        for(int i = 0; i < n; i++){
+            s += a.data[i][i];
+        }
+        return s;
+    }
 }
 
 void print_matrix(Matrix a)

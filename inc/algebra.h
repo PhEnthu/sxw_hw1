@@ -10,6 +10,14 @@ typedef struct Matrix {
 } Matrix;
 
 /**
+ * @brief 指数为整数的幂函数
+ * @param x 底数
+ * @param n 指数
+ * @return 计算结果
+*/
+double mypow(double x, int n);
+
+/**
  * @brief 创建矩阵
  * @param rows 矩阵的行数
  * @param cols 矩阵的列数
