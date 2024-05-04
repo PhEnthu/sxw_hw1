@@ -1,5 +1,4 @@
-#务必安装的cmake版本高于给定的最低版本，否则终止构建
-CMAKE_MINIMUM_REQUIRED(VERSION 3.10 FATAL_ERROR)
+
 
 project (sxw_hw1)
 
