@@ -9,6 +9,16 @@ double mypow(double x, int n){
     }
 }
 
+void exchange(double p[MAX_MATRIX_SIZE][MAX_MATRIX_SIZE], int i, int i1, int rows, int cols){
+    int j;
+    double s = 0;
+    for(j = 0; j < cols; j++){
+        s = p[i][j];
+        p[i][j] = p[i1][j];
+        p[i1][j] = s;
+    }
+}
+
 Matrix create_matrix(int row, int col)
 {
     Matrix m;
@@ -202,29 +212,49 @@ int rank_matrix(Matrix a)
 {
     // ToDo
     int r = a.rows;
-    int i, j, i1 = -1, m;
-
+    int i, j, i1 = -1, m = 0;
+    
     i = 0;
-    for(j = 0; j < a.cols-1; j++){
+    for(j = 0; j < a.cols; j++){
         i1 = -1;
         for(;i < a.rows;){
             if(a.data[i][j] != 0){
-                for(m = 0; m < a.rows; m++){
-                    if(m != i)
-                        a.data[m][j+1] += -(a.data[i][j+1]*a.data[m][j])/a.data[i][j];
-                }
                 for(m = i+1; m < a.rows; m++){
-                    if((a.data[m][j+1] != 0)&&(i1<0)&&(m-i)){
+                    if(m != i)
+                        for(int n = a.cols-1; n >= 0; n--){
+                            a.data[m][n] += -(a.data[i][n]*a.data[m][j])/a.data[i][j];
+                        }
+                }
+                i++;
+            }
+            else{
+                /*向下查找是否在第j列有非零项（第i1项），若没有，i1值为-1*/
+                for(m = i+1; m < a.rows; m++){
+                    if((a.data[m][j] != 0)&&(i1<0)){
                         i1 = m;
                     }
                 }
-                if(i1 < 0)
-                    r--;
+                if(i1 >= 0){
+                    exchange(a.data, i, i1,a.rows,a.cols);
+                    continue;
+                }
+                else;
             }
-            i++;
             break;
         }
-        
+    }
+
+    
+    for(i = 0; i < a.rows; i++){
+        int counts = 0;
+
+        for(int l = 0; l < a.cols; l++){
+            if(a.data[i][l] != 0){
+                counts++;
+            }
+        }
+        if(counts == 0)
+            r--;
     }
     return r;
 }
