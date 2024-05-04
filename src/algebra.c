@@ -3,10 +3,11 @@
 #include <math.h>
 
 double mypow(double x, int n){
-    double s = 0;
+    double s = 1;
     for(int i = 0; i < n; i++){
         s *= x;
     }
+    return s;
 }
 
 void exchange(double p[MAX_MATRIX_SIZE][MAX_MATRIX_SIZE], int i, int i1, int rows, int cols){
@@ -185,12 +186,12 @@ Matrix inv_matrix(Matrix a)
                                 c.data[k][m] = a.data[k][m];
                             }
                             else{
-                                c.data[k][m] = a.data[k+1][m];
+                                c.data[k][m] = a.data[k][m+1];
                             }
                         }
                         else{
                             if(m < j){
-                                c.data[k][m] = a.data[k][m+1];
+                                c.data[k][m] = a.data[k+1][m];
                             }
                             else{
                                 c.data[k][m] = a.data[k+1][m+1];
@@ -198,6 +199,7 @@ Matrix inv_matrix(Matrix a)
                         }
                     }
                 }
+                double det_c = det_matrix(c);
                 A.data[j][i] = det_matrix(c)*mypow(-1,i+j);
                 if(A.data[j][i] == 0) //去除浮点数的-0.00格式
                     A.data[j][i] = 0;
