@@ -128,53 +128,35 @@ sxw_hw1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\sxw_hw1.dir\build.make CMakeFiles/sxw_hw1.dir/build
 .PHONY : sxw_hw1/fast
 
-src/algebra.obj: src/algebra.c.obj
+# target to build an object file
+src/algebra.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sxw_hw1.dir\build.make CMakeFiles/sxw_hw1.dir/src/algebra.obj
 .PHONY : src/algebra.obj
 
-# target to build an object file
-src/algebra.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sxw_hw1.dir\build.make CMakeFiles/sxw_hw1.dir/src/algebra.c.obj
-.PHONY : src/algebra.c.obj
-
-src/algebra.i: src/algebra.c.i
+# target to preprocess a source file
+src/algebra.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sxw_hw1.dir\build.make CMakeFiles/sxw_hw1.dir/src/algebra.i
 .PHONY : src/algebra.i
 
-# target to preprocess a source file
-src/algebra.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sxw_hw1.dir\build.make CMakeFiles/sxw_hw1.dir/src/algebra.c.i
-.PHONY : src/algebra.c.i
-
-src/algebra.s: src/algebra.c.s
+# target to generate assembly for a file
+src/algebra.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sxw_hw1.dir\build.make CMakeFiles/sxw_hw1.dir/src/algebra.s
 .PHONY : src/algebra.s
 
-# target to generate assembly for a file
-src/algebra.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sxw_hw1.dir\build.make CMakeFiles/sxw_hw1.dir/src/algebra.c.s
-.PHONY : src/algebra.c.s
-
-src/main.obj: src/main.c.obj
+# target to build an object file
+src/main.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sxw_hw1.dir\build.make CMakeFiles/sxw_hw1.dir/src/main.obj
 .PHONY : src/main.obj
 
-# target to build an object file
-src/main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sxw_hw1.dir\build.make CMakeFiles/sxw_hw1.dir/src/main.c.obj
-.PHONY : src/main.c.obj
-
-src/main.i: src/main.c.i
+# target to preprocess a source file
+src/main.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sxw_hw1.dir\build.make CMakeFiles/sxw_hw1.dir/src/main.i
 .PHONY : src/main.i
 
-# target to preprocess a source file
-src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sxw_hw1.dir\build.make CMakeFiles/sxw_hw1.dir/src/main.c.i
-.PHONY : src/main.c.i
-
-src/main.s: src/main.c.s
-.PHONY : src/main.s
-
 # target to generate assembly for a file
-src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\sxw_hw1.dir\build.make CMakeFiles/sxw_hw1.dir/src/main.c.s
-.PHONY : src/main.c.s
+src/main.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\sxw_hw1.dir\build.make CMakeFiles/sxw_hw1.dir/src/main.s
+.PHONY : src/main.s
 
 # Help Target
 help:

@@ -7,10 +7,6 @@
 				{
 					"build" : ".",
 					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
-					"minimumCMakeVersion" : 
-					{
-						"string" : "3.10"
-					},
 					"projectIndex" : 0,
 					"source" : ".",
 					"targetIndexes" : 
@@ -39,7 +35,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "sxw_hw1::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-sxw_hw1-Debug-4457a4ddebac8d6a5df5.json",
+					"jsonFile" : "target-sxw_hw1-Debug-97ecac6682967d2c5408.json",
 					"name" : "sxw_hw1",
 					"projectIndex" : 0
 				}

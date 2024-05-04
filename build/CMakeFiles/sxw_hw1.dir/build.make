@@ -68,46 +68,46 @@ include CMakeFiles/sxw_hw1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/sxw_hw1.dir/flags.make
 
-CMakeFiles/sxw_hw1.dir/src/algebra.c.obj: CMakeFiles/sxw_hw1.dir/flags.make
-CMakeFiles/sxw_hw1.dir/src/algebra.c.obj: CMakeFiles/sxw_hw1.dir/includes_C.rsp
-CMakeFiles/sxw_hw1.dir/src/algebra.c.obj: C:/Users/Elecflows/Desktop/learning_amterials/xlab/xlab_hw/hw1/sxw_hw1/src/algebra.c
-CMakeFiles/sxw_hw1.dir/src/algebra.c.obj: CMakeFiles/sxw_hw1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Elecflows\Desktop\learning_amterials\xlab\xlab_hw\hw1\sxw_hw1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/sxw_hw1.dir/src/algebra.c.obj"
-	C:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sxw_hw1.dir/src/algebra.c.obj -MF CMakeFiles\sxw_hw1.dir\src\algebra.c.obj.d -o CMakeFiles\sxw_hw1.dir\src\algebra.c.obj -c C:\Users\Elecflows\Desktop\learning_amterials\xlab\xlab_hw\hw1\sxw_hw1\src\algebra.c
+CMakeFiles/sxw_hw1.dir/src/algebra.obj: CMakeFiles/sxw_hw1.dir/flags.make
+CMakeFiles/sxw_hw1.dir/src/algebra.obj: CMakeFiles/sxw_hw1.dir/includes_C.rsp
+CMakeFiles/sxw_hw1.dir/src/algebra.obj: C:/Users/Elecflows/Desktop/learning_amterials/xlab/xlab_hw/hw1/sxw_hw1/src/algebra.c
+CMakeFiles/sxw_hw1.dir/src/algebra.obj: CMakeFiles/sxw_hw1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Elecflows\Desktop\learning_amterials\xlab\xlab_hw\hw1\sxw_hw1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/sxw_hw1.dir/src/algebra.obj"
+	C:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sxw_hw1.dir/src/algebra.obj -MF CMakeFiles\sxw_hw1.dir\src\algebra.obj.d -o CMakeFiles\sxw_hw1.dir\src\algebra.obj -c C:\Users\Elecflows\Desktop\learning_amterials\xlab\xlab_hw\hw1\sxw_hw1\src\algebra.c
 
-CMakeFiles/sxw_hw1.dir/src/algebra.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sxw_hw1.dir/src/algebra.c.i"
-	C:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Elecflows\Desktop\learning_amterials\xlab\xlab_hw\hw1\sxw_hw1\src\algebra.c > CMakeFiles\sxw_hw1.dir\src\algebra.c.i
+CMakeFiles/sxw_hw1.dir/src/algebra.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sxw_hw1.dir/src/algebra.i"
+	C:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Elecflows\Desktop\learning_amterials\xlab\xlab_hw\hw1\sxw_hw1\src\algebra.c > CMakeFiles\sxw_hw1.dir\src\algebra.i
 
-CMakeFiles/sxw_hw1.dir/src/algebra.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sxw_hw1.dir/src/algebra.c.s"
-	C:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Elecflows\Desktop\learning_amterials\xlab\xlab_hw\hw1\sxw_hw1\src\algebra.c -o CMakeFiles\sxw_hw1.dir\src\algebra.c.s
+CMakeFiles/sxw_hw1.dir/src/algebra.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sxw_hw1.dir/src/algebra.s"
+	C:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Elecflows\Desktop\learning_amterials\xlab\xlab_hw\hw1\sxw_hw1\src\algebra.c -o CMakeFiles\sxw_hw1.dir\src\algebra.s
 
-CMakeFiles/sxw_hw1.dir/src/main.c.obj: CMakeFiles/sxw_hw1.dir/flags.make
-CMakeFiles/sxw_hw1.dir/src/main.c.obj: CMakeFiles/sxw_hw1.dir/includes_C.rsp
-CMakeFiles/sxw_hw1.dir/src/main.c.obj: C:/Users/Elecflows/Desktop/learning_amterials/xlab/xlab_hw/hw1/sxw_hw1/src/main.c
-CMakeFiles/sxw_hw1.dir/src/main.c.obj: CMakeFiles/sxw_hw1.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Elecflows\Desktop\learning_amterials\xlab\xlab_hw\hw1\sxw_hw1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/sxw_hw1.dir/src/main.c.obj"
-	C:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sxw_hw1.dir/src/main.c.obj -MF CMakeFiles\sxw_hw1.dir\src\main.c.obj.d -o CMakeFiles\sxw_hw1.dir\src\main.c.obj -c C:\Users\Elecflows\Desktop\learning_amterials\xlab\xlab_hw\hw1\sxw_hw1\src\main.c
+CMakeFiles/sxw_hw1.dir/src/main.obj: CMakeFiles/sxw_hw1.dir/flags.make
+CMakeFiles/sxw_hw1.dir/src/main.obj: CMakeFiles/sxw_hw1.dir/includes_C.rsp
+CMakeFiles/sxw_hw1.dir/src/main.obj: C:/Users/Elecflows/Desktop/learning_amterials/xlab/xlab_hw/hw1/sxw_hw1/src/main.c
+CMakeFiles/sxw_hw1.dir/src/main.obj: CMakeFiles/sxw_hw1.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Elecflows\Desktop\learning_amterials\xlab\xlab_hw\hw1\sxw_hw1\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/sxw_hw1.dir/src/main.obj"
+	C:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/sxw_hw1.dir/src/main.obj -MF CMakeFiles\sxw_hw1.dir\src\main.obj.d -o CMakeFiles\sxw_hw1.dir\src\main.obj -c C:\Users\Elecflows\Desktop\learning_amterials\xlab\xlab_hw\hw1\sxw_hw1\src\main.c
 
-CMakeFiles/sxw_hw1.dir/src/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sxw_hw1.dir/src/main.c.i"
-	C:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Elecflows\Desktop\learning_amterials\xlab\xlab_hw\hw1\sxw_hw1\src\main.c > CMakeFiles\sxw_hw1.dir\src\main.c.i
+CMakeFiles/sxw_hw1.dir/src/main.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/sxw_hw1.dir/src/main.i"
+	C:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Elecflows\Desktop\learning_amterials\xlab\xlab_hw\hw1\sxw_hw1\src\main.c > CMakeFiles\sxw_hw1.dir\src\main.i
 
-CMakeFiles/sxw_hw1.dir/src/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sxw_hw1.dir/src/main.c.s"
-	C:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Elecflows\Desktop\learning_amterials\xlab\xlab_hw\hw1\sxw_hw1\src\main.c -o CMakeFiles\sxw_hw1.dir\src\main.c.s
+CMakeFiles/sxw_hw1.dir/src/main.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/sxw_hw1.dir/src/main.s"
+	C:\PROGRA~1\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Elecflows\Desktop\learning_amterials\xlab\xlab_hw\hw1\sxw_hw1\src\main.c -o CMakeFiles\sxw_hw1.dir\src\main.s
 
 # Object files for target sxw_hw1
 sxw_hw1_OBJECTS = \
-"CMakeFiles/sxw_hw1.dir/src/algebra.c.obj" \
-"CMakeFiles/sxw_hw1.dir/src/main.c.obj"
+"CMakeFiles/sxw_hw1.dir/src/algebra.obj" \
+"CMakeFiles/sxw_hw1.dir/src/main.obj"
 
 # External object files for target sxw_hw1
 sxw_hw1_EXTERNAL_OBJECTS =
 
-C:/Users/Elecflows/Desktop/learning_amterials/xlab/xlab_hw/hw1/sxw_hw1/bin/sxw_hw1.exe: CMakeFiles/sxw_hw1.dir/src/algebra.c.obj
-C:/Users/Elecflows/Desktop/learning_amterials/xlab/xlab_hw/hw1/sxw_hw1/bin/sxw_hw1.exe: CMakeFiles/sxw_hw1.dir/src/main.c.obj
+C:/Users/Elecflows/Desktop/learning_amterials/xlab/xlab_hw/hw1/sxw_hw1/bin/sxw_hw1.exe: CMakeFiles/sxw_hw1.dir/src/algebra.obj
+C:/Users/Elecflows/Desktop/learning_amterials/xlab/xlab_hw/hw1/sxw_hw1/bin/sxw_hw1.exe: CMakeFiles/sxw_hw1.dir/src/main.obj
 C:/Users/Elecflows/Desktop/learning_amterials/xlab/xlab_hw/hw1/sxw_hw1/bin/sxw_hw1.exe: CMakeFiles/sxw_hw1.dir/build.make
 C:/Users/Elecflows/Desktop/learning_amterials/xlab/xlab_hw/hw1/sxw_hw1/bin/sxw_hw1.exe: CMakeFiles/sxw_hw1.dir/linkLibs.rsp
 C:/Users/Elecflows/Desktop/learning_amterials/xlab/xlab_hw/hw1/sxw_hw1/bin/sxw_hw1.exe: CMakeFiles/sxw_hw1.dir/objects1.rsp
