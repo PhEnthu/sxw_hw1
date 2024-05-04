@@ -198,7 +198,7 @@ Matrix inv_matrix(Matrix a)
                         }
                     }
                 }
-                A.data[j][i] = det_matrix(c)*pow(-1,i+j);
+                A.data[j][i] = det_matrix(c)*mypow(-1,i+j);
                 if(A.data[j][i] == 0) //去除浮点数的-0.00格式
                     A.data[j][i] = 0;
             }
